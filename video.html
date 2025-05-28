@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Видео — Газпром газораспределение Ростов-на-Дону</title>
+  <link rel="icon" href="https://www.rostovoblgaz.ru/local/templates/aspro-allcorp/themes/color5/images/logo.png">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Trebuchet MS", sans-serif;
+      background-color: #f2f6fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header, footer {
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      background-color: #003366;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+    .side-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #4889c9;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 20px;
+    box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .side-menu a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .side-menu a:hover {
+    background-color: #0066cc;
+  }
+
+  .side-menu .active {
+    background-color: #00264d;
+  }
+  </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.rostovoblgaz.ru/local/templates/aspro-allcorp/themes/color5/images/logo.png" alt="Логотип" class="logo" />
+    </header>
+  <div class="container">
+    <h1>Видео о компании</h1>
+    <iframe
+      src="https://www.youtube.com/embed/sRXgBSJmbPI"
+      title="Видео о компании"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+<footer>
+  <div>
+    <small>&copy; 2025 ПАО «Газпром газораспределение Ростов-на-Дону» — Все права защищены</small>
+  </div>
+</footer>
+<div class="side-menu">
+  <a href="company.html">Компания</a>
+  <a href="news.html">Новости</a>
+  <a href="exchange_rate.html">Курс валют</a>
+  <a href="contact_data.html">Контакты</a>
+  <a href="video.html" class="active">Видео</a>
+</div>
+</body>
+</html>

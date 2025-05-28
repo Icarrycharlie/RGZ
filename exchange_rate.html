@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Курс валют — Румынский лей (RON)</title>
+  <link rel="icon" href="https://www.rostovoblgaz.ru/local/templates/aspro-allcorp/themes/color5/images/logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="rate.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Trebuchet MS", sans-serif;
+      background-color: #f2f6fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header, footer {
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      background-color: #003366;
+    }
+    h1 {
+      color: #005baa;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .converter, .chart-container {
+      max-width: 700px;
+      margin: 30px auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    #result {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    canvas {
+      margin-top: 30px;
+    }
+
+    .highlight {
+      background-color: #e6f7ff;
+      padding: 10px;
+      border-left: 4px solid #005baa;
+      margin-top: 10px;
+    }
+
+    .side-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #4889c9;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 20px;
+    box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .side-menu a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .side-menu a:hover {
+    background-color: #0066cc;
+  }
+
+  .side-menu .active {
+    background-color: #00264d;
+  }
+  </style>
+</head>
+<body>
+<header>
+    <img src="https://www.rostovoblgaz.ru/local/templates/aspro-allcorp/themes/color5/images/logo.png" alt="Логотип" class="logo" />
+  </header>
+<h1>Курс валют: Румынский лей (RON)</h1>
+
+<div class="converter">
+  <h2>Калькулятор валют</h2>
+  <label for="rub">Сумма в рублях (RUB):</label>
+  <input type="number" id="rub" placeholder="Введите сумму в рублях">
+
+  <label for="ron">Сумма в леях (RON):</label>
+  <input type="number" id="ron" placeholder="Введите сумму в леях">
+
+  <div id="result"></div>
+</div>
+
+<div class="chart-container">
+  <h2>Динамика курса за последний месяц</h2>
+  <canvas id="rateChart" height="100"></canvas>
+  <div id="info" class="highlight" style="display:none;"></div>
+</div>
+
+<footer>
+    <p>&copy; 2002–2025 ПАО «Газпром газораспределение Ростов-на-Дону». Все права защищены.</p>
+  </div>
+</footer>
+
+<div class="side-menu">
+  <a href="company.html">Компания</a>
+  <a href="news.html">Новости</a>
+  <a href="exchange_rate.html" class="active">Курс валют</a>
+  <a href="contact_data.html">Контакты</a>
+  <a href="video.html">Видео</a>
+</div>
+
+</body>
+</html>

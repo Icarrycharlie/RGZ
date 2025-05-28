@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Новости — Газпром газораспределение Ростов-на-Дону</title>
+  <link rel="icon" href="https://www.rostovoblgaz.ru/local/templates/aspro-allcorp/themes/color5/images/logo.png">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Trebuchet MS", sans-serif;
+      background-color: #f2f6fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header, footer {
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      background-color: #003366;
+    }
+    h1 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 40px;
+    }
+    .news-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .news-card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      position: relative;
+      transition: transform 0.3s;
+    }
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+    .news-date {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 5px;
+    }
+    .news-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #003366;
+    }
+    .news-preview {
+      margin-bottom: 10px;
+    }
+    .full-text {
+      display: none;
+      margin-top: 10px;
+      color: #333;
+    }
+    .toggle-btn {
+      background: #003366;
+      color: white;
+      margin-top: 15px;
+      padding: 10px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .toggle-btn:hover {
+      background: #0055aa;
+    }
+    .news-img {
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        object-fit: cover;
+        max-height: 450px;
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #0055aa;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    .back-to-top:hover {
+      background-color: var(--hover);
+    }
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .logo {
+      width: 160px;
+      margin: 10px auto 0;
+      display: block;
+    }
+    .side-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #4889c9;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 20px;
+    box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .side-menu a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .side-menu a:hover {
+    background-color: #0066cc;
+  }
+
+  .side-menu .active {
+    background-color: #00264d;
+  }
+  </style>
+  <script>
+    function toggleText(button) {
+      const fullText = button.previousElementSibling;
+      if (fullText.style.display === "block") {
+        fullText.style.display = "none";
+        button.textContent = "Показать";
+      } else {
+        fullText.style.display = "block";
+        button.textContent = "Скрыть";
+      }
+    }
+  </script>
+</head>
+<body>
+  <a name="top"></a>
+  <header>
+    <img src="https://www.rostovoblgaz.ru/local/templates/aspro-allcorp/themes/color5/images/logo.png" alt="Логотип" class="logo" />
+  </header>
+<main>
+  <h1>Новости компании</h1>
+
+  <div class="news-container">
+    <div class="news-card">
+      <div class="news-date">22 мая 2025</div>
+      <div class="news-title">В станице Заплавской Ростовской области газифицирован детский сад</div>
+      <img src="https://www.rostovoblgaz.ru/upload/resize_cache/iblock/7f2/186_186_1/hjcbb33jhmzql30mqzcw0osm3fqd5u0u.jpg" alt="Новость" class="news-img">
+      <div class="news-preview">Работники «Газпром газораспределение Ростов-на-Дону» подключили к сетям газоснабжения детский сад в станице Заплавской Октябрьского района Ростовской области.</div>
+      <div class="full-text">Для газификации дошкольного образовательного учреждения построен газопровод, 
+        подключено газовое отопительное оборудование. Детский сад работает с 1971 года, 
+        он рассчитан на 130 ребят от 2 до 7 лет. Учреждение посещают дети из станиц Заплавской, 
+        Бессергеневской, хуторов Калинин, Задонский и поселка Донской.<br>
+        «До перехода на газовое отопление детский сад отапливали углем. 
+        Теперь в учреждении будет проще обеспечивать стабильный и комфортный температурный 
+        режим круглый год», – отметил исполняющий обязанности генерального директора ООО 
+        «Газпром межрегионгаз Ростов-на-Дону» Павел Бережной.</div>   
+      <button class="toggle-btn" onclick="toggleText(this)">Показать</button>
+    </div>
+    <div class="news-card">
+      <div class="news-date">19 мая 2025</div>
+      <div class="news-title">С момента реализации программы догазификации социальных объектов в Ростовской области заключено 153 договора</div>
+      <img src="https://www.rostovoblgaz.ru/upload/resize_cache/iblock/9b3/186_186_1/ypkfgg6nbh5noxb8ftb0q5i3g4hjassd.JPG" alt="Новость" class="news-img">
+      <div class="news-preview">На территории Ростовской области в рамках программы догазификации социальных объектов заключено 153 договора, 
+        исполнено до границ участка 127, выполнено подключений 22.</div>
+      <div class="full-text">С начала 2025 года уже обеспечена техническая возможность для подключения 12 учреждений. 
+        Две школы в Миллеровском и Верхнедонском районах, детский сад "Колокольчик" в х. 
+        Спорный Веселовского района и котельная  для теплоснабжения городской больницы в г. 
+        Гуково подключены.</div>
+      <button class="toggle-btn" onclick="toggleText(this)">Показать</button>
+    </div>
+
+    <div class="news-card">
+      <div class="news-date">16 мая 2025</div>
+      <div class="news-title">Специалисты «Газпром газораспределение Ростов-на-Дону» провели реконструкцию на мемориале с вечным огнем в г. Новочеркасске</div>
+      <img src="https://www.rostovoblgaz.ru/upload/resize_cache/iblock/1d4/186_186_1/4m4t9tjhz5py2hjgf2tbmvro6qz2nrbq.jpeg" alt="Новость" class="news-img">
+      <div class="news-preview">Специалисты компании «Газпром газораспределение Ростов-на-Дону» в г. Новочеркасске провели реконструкцию мемориала «Братская Могила воинов, погибших в годы 
+        Великой Отечественной войны и 240 одиночных захоронений», на старом кладбище.</div>
+      <div class="full-text">Газовики проложили новый газопровод взамен вышедшего из строя старого, заменили горелку, провели техническое обслуживание газовых систем вечного огня. Кроме того, работники проверили 
+        герметичность газопроводов и всех соединений, провели регулировку процесса сжигания газа. <br>
+        Мемориал - братская могила и памятник воинам, погибшим при освобождении Новочеркасска в феврале 1943 года. <br>
+        Вечный огонь был зажжен на мемориале в 1975 году и горит уже 50 лет.</div>
+      <button class="toggle-btn" onclick="toggleText(this)">Показать</button>
+    </div>
+
+    <div class="news-card">
+      <div class="news-date">15 мая 2025</div>
+      <div class="news-title">Состоялось заседание регионального штаба по газификации Ростовской области</div>
+      <img src="https://www.rostovoblgaz.ru/upload/resize_cache/iblock/753/186_186_1/2ierqo4xsh80492nugmtgk6m2m089h4d.jpg" alt="Новость" class="news-img">
+      <div class="news-preview">На заседании  регионального штаба  по газификации Ростовской области обсудили ход исполнения мероприятий по газификации региона.</div>
+      <div class="full-text">В совещании принял участие исполняющий обязанности генерального директора ПАО «Газпром газораспределение Ростов-на-Дону» Илья Сафронов. <br>
+        Отдельное внимание в ходе заседания было уделено реализации президент-ской программы догазификации. К настоящему времени с жителями Ростовской об-ласти заключено почти 40 тыс. договоров на догазификацию, из них 37 359 исполне-ны – сети построены до границ земельных участков заявителей. <br>
+        Также в Ростовской области активно ведется прием заявок на догазификацию социальных объектов. Принято 153 заявки, из них 127 исполнено – газовые сети проложены к учреждениям.</div>
+      <button class="toggle-btn" onclick="toggleText(this)">Показать</button>
+    </div>
+
+    <div class="news-card">
+      <div class="news-date">13 мая 2025</div>
+      <div class="news-title">Специалисты «Газпром газораспределение Ростов-на-Дону» приняли участие в конкурсе «Лучший сварщик России»</div>
+      <img src="https://www.rostovoblgaz.ru/upload/resize_cache/iblock/71b/186_186_1/xx4ij3lvf717efp85oure999gvua8758.jpg" alt="Новость" class="news-img">
+      <div class="news-preview">В конкурсе «Лучший сварщик России» приняли участие сварщики из филиалов ПАО «Газпром газораспределение Ростов-на-Дону» в городе Новочеркасске и Ростове-на-Дону.</div>
+      <div class="full-text">Региональный этап всероссийского конкурса профессионального мастерства прошел на базе Национального Агентства Контроля Сварки. <br>
+        Роман Мелешко из филиала г.Ростова-на-Дону получил диплом участника в номинации «Ручная аргоновая сварка плавящимся покрытым электродом», а Николай Деревянченко из г.Новочеркасска диплом участника в номинации «Сварка нагретым инструментом». <br>
+        В рамках конкурса прошел семинар по нормативно-правовому регулированию в области сварочного производства, а также актуальным вопросам импортозамещения.</div>
+      <button class="toggle-btn" onclick="toggleText(this)">Показать</button>
+    </div>
+
+    <div class="news-card">
+      <div class="news-date">21 апреля 2025</div>
+      <div class="news-title">Специалисты «Газпром газораспределение Ростов-на-Дону» приняли участие в акции «Сад памяти»</div>
+      <img src="https://www.rostovoblgaz.ru/upload/resize_cache/iblock/b3f/186_186_1/t68w3jldv8wymf3c7732er2j7wbued3w.jpg" alt="Новость" class="news-img">
+      <div class="news-preview">Сотрудники филиала «Газпром газораспределение Ростов-на-Дону» в г. Зимовники приняли участие в акции «Сад памяти».</div>
+      <div class="full-text">Газовики, в честь участников Великой Отечественной войны, высадили  в лесхозе Ремонтненского района  17 саженцев акации. <br>
+        «Сад памяти» - международная эколого-патриотическая акция в память о каждом погибшем советском человеке в годы Великой Отечественной войны. В рамках акции уже высажено почти 4 млн. деревьев в 23 странах.</div>
+      <button class="toggle-btn" onclick="toggleText(this)">Показать</button>
+    </div>
+
+    <div class="news-card">
+      <div class="news-date">16 апреля 2025</div>
+      <div class="news-title">Специалисты ПАО «Газпром газораспределение Ростов-на-Дону» приняли участие в образовательном фестивале</div>
+      <img src="https://www.rostovoblgaz.ru/upload/resize_cache/iblock/8c6/186_186_1/7layhgot6mekatk2allmwgcu0lkooe5z.JPG" alt="Новость" class="news-img">
+      <div class="news-preview">Специалисты газовой компании  присутствовали  на двух площадках Фестиваля-выставки «Образование. Карьера. Бизнес».
+         Сотрудники кадрового подразделения рассказали о работе компании, 
+         а преподаватель учебно-методического центра проводил мастер-классы по 
+         работе с газоанализатором на площадке Ростовского строительного колледжа.</div>
+      <div class="full-text">Фестиваль проводится ежегодно и является одним из основных выставочно -ярмарочных мероприятий Ростовской области.
+        За 25 лет своей активной работы фестиваль стал площадкой для 
+        взаимодействия образования и производства. Ежегодно фестиваль посещают 
+        более 20000 посетителей. Принимают участие более 200 компаний и 
+        образовательных учреждений.</div>
+      <button class="toggle-btn" onclick="toggleText(this)">Показать</button>
+    </div>
+
+    <div class="news-card">
+      <div class="news-date">11 апреля 2025</div>
+      <div class="news-title">Специалисты «Газпром газораспределение Ростов-на-Дону» посетили День карьеры</div>
+      <img src="https://www.rostovoblgaz.ru/upload/resize_cache/iblock/b46/186_186_1/2iu8ul0txa7rzb9lgubkwad7mfa8nllj.jpg" alt="Новость" class="news-img">
+      <div class="news-preview">Сотрудники кадровой службы «Газпром газораспределение Ростов-на-Дону» приняли участие в мероприятии, посвященному Дню карьеры в Донском государственном техническом университете.</div>
+      <div class="full-text">Выпускникам предложили изучить вакансии в газораспределительной 
+        организации. И каждого проконсультировали по условиям работы. <br>
+        День карьеры - это уникальная возможность для компаний привлечь 
+        студентов в ряды своих работников. Большая часть ребят выразила 
+        желание попробовать свои силы в компании.  </div>
+      <button class="toggle-btn" onclick="toggleText(this)">Показать</button>
+    </div>
+
+    <div class="news-card">
+      <div class="news-date">3 марта 2025</div>
+      <div class="news-title">В 2024 году через кол-центр в «Газпром газораспределение Ростов-на-Дону» поступило 
+        более 1 млн 100 тысяч обращений от абонентов</div>
+      <img src="https://www.rostovoblgaz.ru/upload/resize_cache/iblock/d9b/186_186_1/r0sa52pbjwnpvl8qeg8vs1ezso62palq.jpg" alt="Новость" class="news-img">
+      <div class="news-preview">Основная часть звонков в кол-центр пришлась на голосового ассистента – почти 900 тыс.</div>
+      <div class="full-text">С помощью робота ростовчане передали 217 тыс. показаний счетчика газа и сделали 51, 5 тыс. заявок на техническое обслуживание и ремонт газового оборудования. <br>
+        Операторы кол-центра оказали консультации 217 тысячам абонентов Ростовской 
+        области. Основные вопросы связаны с оплатой за газ. Специалисты также приняли заявки на техническое обслуживание газового оборудования, 
+        его ремонт и замену. <br>
+        Единый номер 8 800 100-61-04 поможет абонентам подать заявку на техническое 
+        обслуживание газового оборудования, передать показания счетчика газа и другие вопросы.</div>
+      <button class="toggle-btn" onclick="toggleText(this)">Показать</button>
+    </div>
+
+    <div class="news-card">
+      <div class="news-date">26 февраля 2025</div>
+      <div class="news-title">Специалисты «Газпром газораспределение Ростов-на-Дону» стали экспертами на Чемпионате профессионального мастерства</div>
+      <img src="https://www.rostovoblgaz.ru/upload/resize_cache/iblock/d1d/186_186_1/c3fwec4fn7p4hpv5au46zytvzirwqber.jpg" alt="Новость" class="news-img">
+      <div class="news-preview">Сотрудники учебного центра «Газпром газораспределение Ростов-на-Дону» выступили в качестве 
+        индустриальных экспертов Чемпионата профессионального мастерства «Профессионалы» профильной компетенции 
+        «Монтаж и эксплуатация газового оборудования».</div>
+      <div class="full-text">Региональный этап Чемпионата состоялся на площадке Ростовского строительного колледжа – 
+        ядра кластера «Строительство» федерального проекта «Профессионалитет». <br>
+        «Мы всегда с воодушевлением поддерживаем такие мероприятия. Наши специалисты не только оценивали конкурсантов, 
+        но также осуществили оперативную учебу ребят в нашем центре и провели техническое сопровождение конкурса»,- 
+        рассказала заместитель генерального директора по управлению персоналом и общим вопросам 
+        ПАО «Газпром газораспределение Ростов-на-Дону» Лилия Викторовна Недоборенко. <br>
+        Чемпионат по профессиональному мастерству - всероссийское соревнование 
+        для молодых специалистов. Направлен на поддержку талантливой молодежи и их 
+        трудоустройство в ведущие компании отечественных производителей, 
+        а также  на популяризацию наиболее востребованных рабочих профессий и развитие системы 
+        среднего профессионального образования.</div>
+      <button class="toggle-btn" onclick="toggleText(this)">Показать</button>
+    </div>
+  </div>
+</main>
+<footer>
+    <p>&copy; 2002–2025 ПАО «Газпром газораспределение Ростов-на-Дону». Все права защищены.</p>
+  </footer>
+  <div class="side-menu">
+  <a href="company.html">Компания</a>
+  <a href="news.html" class="active">Новости</a>
+  <a href="exchange_rate.html">Курс валют</a>
+  <a href="contact_data.html">Контакты</a>
+  <a href="video.html">Видео</a>
+</div>
+  <a href="#top" class="back-to-top" title="Наверх">↑ Наверх</a>
+</body>
+</html>
